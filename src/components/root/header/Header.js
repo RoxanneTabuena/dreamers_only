@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { useOrientation } from '../../../hooks/useOrientation'
-import { Nav } from '../nav/Nav'
 import { PageInfo } from './PageInfo'
 import logo from '../../../assets/img/Logo_white 2.png'
 import style from './header.module.css'
@@ -19,10 +18,6 @@ export const Header = ({headerRef, scrollY}) => {
     useEffect(()=>{
         setOpen(false)
     },[pathname])
-    // open and close menu on click
-    const handleMenuToggle= () => {
-        setOpen(!open)
-    }
     // shrink display on scroll, grow display as top of page approaches
     useEffect(()=>{
         const computeHeight = () => {
@@ -41,7 +36,7 @@ export const Header = ({headerRef, scrollY}) => {
             setHeight(minIcon)
         }
         setOpen(false)
-    }, [scrollY])
+    }, [scrollY, display, maxIcon, minIcon])
     const full = (
             <header ref={headerRef} className={style.full}>
                 <div className={style.fullTitle}>
