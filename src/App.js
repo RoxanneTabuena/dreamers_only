@@ -1,6 +1,7 @@
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import { Root }from "./components/root/Root"
 import { Work } from './components/work/Work'
+import { Cur } from './components/Cur/Cur';
 
 import './App.css';
 
@@ -14,6 +15,10 @@ createBrowserRouter( createRoutesFromElements(
         <Route
           index
           element={< Work/>}
+          />
+        <Route
+          path="/cur"
+          element={< Cur/>}
           />
         <Route
           path="/:filter"
