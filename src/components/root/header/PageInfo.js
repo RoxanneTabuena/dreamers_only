@@ -4,7 +4,10 @@ import { NavLink } from 'react-router-dom'
 import style from './header.module.css'
 export const PageInfo = ({ height}) => {
     const {pathname} = useLocation()
-    const title = pathname === '/' ? 'Welcome' : pathname.split('/')[1]
+    let title = pathname === '/' ? 'Recent Work' : pathname.split('/')[1]
+    if(title.includes(`.`)){
+        title = title.split(`.`)[1]
+    }
     // set font height according to icon height
     const letterHeight = useRef(height/2.2)
     return (

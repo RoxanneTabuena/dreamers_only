@@ -7,13 +7,14 @@ Site Map
     - NavButton map of current Tags   
 - Clients
     - Client
-        - Cover
-            - Demo
-            - Basic
-                - Navbutton Map of Tags
-                - Read
+        - Basic
+        - Cover OR Read
+            - Cover
+                - Demo
+                    - Navbutton Map of Tags
+            - Read
                 - Content
-                    - Visit
-                        - link
-                        - logo
-                        - description
+                - Visit
+                    - link
+                    - logo
+                    - description
