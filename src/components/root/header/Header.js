@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { useOrientation } from '../../../hooks/useOrientation'
 import { PageInfo } from './PageInfo'
-import logo from '../../../assets/img/Logo_white 2.png'
 import style from './header.module.css'
 export const Header = ({headerRef, scrollY}) => {
     const orientation = useOrientation()
@@ -42,18 +41,18 @@ export const Header = ({headerRef, scrollY}) => {
                 <div className={style.fullTitle}>
                 <NavLink to="/" className={style.logo}>            
                     <img 
-                        src={logo} 
+                        src="https://imagehostclub.s3.us-west-1.amazonaws.com/dreamers/Dreamers_Only_Logo.png"
                         alt="unbound studio logo"
                         style={{
                             height: height,
-                            aspectRatio: '1.7'
+                            aspectRatio: '1'
                         }}
                         ></img>
                     <h3
                         style={{
                             fontSize: `${maxIcon/3.5}px`
                         }}
-                    >roxanne</h3>
+                    >roxy</h3>
                 </NavLink>
                 {!open && <PageInfo height={height}/>}
             </div>
@@ -65,11 +64,11 @@ export const Header = ({headerRef, scrollY}) => {
             <div className={style.title}>
                 <NavLink to="/" className={style.logo}>            
                     <img 
-                        src={logo} 
+                        src="https://imagehostclub.s3.us-west-1.amazonaws.com/dreamers/Dreamers_Only_Logo.png" 
                         alt="unbound studio logo"
                         style={{
                             height: height,
-                            aspectRatio: '1.7',
+                            aspectRatio: '1',
                             minWidth: height
                         }}
                     ></img>
