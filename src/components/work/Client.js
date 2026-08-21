@@ -2,10 +2,11 @@ import { useIsVisible } from '../../hooks/useIsVisible'
 import { useEffect, useState } from 'react'
 import { Read } from './Read'
 import { Cover } from './Cover'
+import { Basic } from './Basic'
 import style from './work.module.css'
 export const Client = ({title,info,featured,handleSwitch}) => {
     // destructure details
-    const {color} = info
+    const {color, tags, launch} = info
     // control which project is being featured
     const refOptions = { options: {threshold: 1}}
     const [bottomRef, bVisible] = useIsVisible(refOptions)
@@ -32,6 +33,7 @@ export const Client = ({title,info,featured,handleSwitch}) => {
                 : 
                 <Read handleFlip={handleFlip} info={info} title={title}/>
             }
+            <Basic title={title} tags={tags} color={color} launch={launch}/>
             <span ref={bottomRef} className={style.bottom}></span>
         </div>
     )
