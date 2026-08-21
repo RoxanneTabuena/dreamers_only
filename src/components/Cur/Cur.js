@@ -9,10 +9,10 @@ export const Cur = () => {
     Fri Aug 21
     
     - Tidy House
-    - Remake Dumplings
     - Marinade Carnitas
     * shop
     * get water
+    - Remake Dumplings
     - Wax
 
     `.split(`\n`)
