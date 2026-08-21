@@ -26,7 +26,7 @@ export const Filter= ({handleFilterChange, handleAddFilter, handleRemoveFilter, 
     }
     useEffect(()=>{
         handleFilterChange(filterHeight)
-    }, [filterHeight])
+    }, [filterHeight, handleFilterChange])
     useEffect(()=>{
 
     }, [active])

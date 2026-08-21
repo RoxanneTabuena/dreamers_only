@@ -19,7 +19,7 @@ export const Client = ({title,info,featured,handleSwitch}) => {
         }else if(featured){
             handleSwitch(null)
         }
-    },[bVisible, tVisible, featured])
+    },[bVisible, tVisible, featured, handleSwitch, title])
     // toggle information display on demand
     const handleFlip = () => {
         setFlip(!flip)

@@ -20,7 +20,7 @@ export const useIsVisible = ({options}) => {
       return () => observer.disconnect();
     }
 
-  }, []);
+  }, [options]);
 
   return [ref, visible]
 }

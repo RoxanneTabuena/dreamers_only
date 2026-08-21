@@ -14,7 +14,7 @@ export const useOrientation = () => {
         return () => {
         window.screen.orientation.removeEventListener('change', handleOrientationChange);
         };
-    }, []);
+    }, [type]);
 
     return orientation;
 };
