@@ -36,7 +36,7 @@ export const Filter= ({handleFilterChange, handleAddFilter, handleRemoveFilter, 
                 return <NavButton
                             key={tag}
                             text={`x ${tag}`}
-                            path={`/work/${removeFilterPath(tag)}`}
+                            path={`/${removeFilterPath(tag)}`}
                             backgroundColor="fuchsia"
                             onclick={()=>{handleRemoveFilter(tag)}}
                         />
@@ -49,7 +49,7 @@ export const Filter= ({handleFilterChange, handleAddFilter, handleRemoveFilter, 
                                     onclick={()=>{handleAddFilter(tag)}}
                                     key={tag}
                                     text={tag}
-                                    path={`/work/${addFilterPath(tag)}`}
+                                    path={`/${addFilterPath(tag)}`}
                                 />
                     })}
                 </div>

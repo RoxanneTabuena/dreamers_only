@@ -1,6 +1,6 @@
 
-import { Basic } from './Basic'
 import { Content } from './Content'
+import { Basic } from './Basic'
 import style from './work.module.css'
 export const Read = ({handleFlip, info, title}) => {
     const {demo, demoAlt, tags, color, launch} = info

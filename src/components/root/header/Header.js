@@ -58,11 +58,11 @@ export const Header = ({headerRef, scrollY}) => {
                         style={{
                             fontSize: `${maxIcon/3.5}px`
                         }}
-                    >Web Studio</h3>
+                    >roxanne</h3>
                 </NavLink>
                 {!open && <PageInfo height={height}/>}
             </div>
-            <Nav iconHeight={height} open={open} handleMenuToggle={handleMenuToggle}/>
+            {/* <Nav iconHeight={height} open={open} handleMenuToggle={handleMenuToggle}/> */}
         </header>
     )
     const mini = (
@@ -81,7 +81,7 @@ export const Header = ({headerRef, scrollY}) => {
                 </NavLink>
                 {!open && <PageInfo height={height}/>}
             </div>
-            <Nav iconHeight={height} handleMenuToggle={handleMenuToggle} open={open}/>
+            {/* <Nav iconHeight={height} handleMenuToggle={handleMenuToggle} open={open}/> */}
         </header>
     )
     return (

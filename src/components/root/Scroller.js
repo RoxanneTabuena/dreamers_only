@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { useWindowDimensions } from '../../hooks/useWindowDimensions'
 import style from './root.module.css'
 
-export const Scroller = ({text, totalHeight, position, color, handleWidthChange, headerHeight, on}) => {
+export const Scroller = ({text, totalHeight, position, color, handleWidthChange, headerHeight}) => {
     const {height}= useWindowDimensions()
     const textHeight = (height-headerHeight)/text.length
     const textWidth = textHeight*.7
@@ -12,7 +12,7 @@ export const Scroller = ({text, totalHeight, position, color, handleWidthChange,
         handleWidthChange(textWidth)
     }, [handleWidthChange, textWidth])
     return (
-        <div className={`${style.scroller} ${!on && style.invisible}`}
+        <div className={`${style.scroller}`}
             style={{ top: headerHeight}}
         >
            <p
