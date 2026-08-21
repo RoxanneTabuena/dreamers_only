@@ -2,3 +2,5 @@ Fri Aug 21 26
 1:58 Move Basic Info Up Hierarchy  2:33
 2:38 Simplify Page Info 2:46
 2:47 Change Logo 3:09
+4:00 Add Cur Task List 4:30
+4:30 Add Carpe IMG 4:47
