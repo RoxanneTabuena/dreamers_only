@@ -23,8 +23,11 @@ export const Cur = () => {
 
     console.log(letter)
     return (
-        <div ref={curRef} className={style.cur} style={{fontSize: `${Math.floor(letter)}px`}}>
-            {cur.map((l,i)=>{return<p key={i}>{l}</p>})}
+        <div className={style.cur} ref={curRef}>
+            <div style={{fontSize: `${Math.floor(letter)}px`}}>
+                {cur.map((l,i)=>{return<p key={i}>{l}</p>})}
+            </div>
+            <img  className={style.img} src="https://imagehostclub.s3.us-west-1.amazonaws.com/dreamers/carpe.png" alt="carpe diem art"></img>
         </div>
     )
 }

@@ -1,5 +1,5 @@
 .cur {
-    height: 100%;
+    height: 80vh;
 }
 
 .cur > * {
@@ -7,7 +7,22 @@
 }
 
 /* PHONE RULES */
-@media screen and ( max-width: 699px) {}
+@media screen and ( max-width: 699px) {
+    .cur {
+        /* height: 200vh; */
+    }
+}
 
 /* DESK RULES */
-@media screen and ( min-width: 700px) {}
+@media screen and ( min-width: 700px) {
+    .cur {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .img{
+
+        height: 80vh;
+        padding-bottom: 10em;
+    }
+}
