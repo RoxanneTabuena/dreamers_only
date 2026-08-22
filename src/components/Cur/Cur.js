@@ -10,11 +10,10 @@ export const Cur = () => {
     
     - Tidy House
     - Marinade Carnitas
+    - Remake Dumplings
     * shop
     * get water
     * start marinade
-    - Remake Dumplings
-    - Wax
 
     `.split(`\n`)
 
