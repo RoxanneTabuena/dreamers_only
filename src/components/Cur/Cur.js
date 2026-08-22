@@ -12,6 +12,7 @@ export const Cur = () => {
     - Marinade Carnitas
     * shop
     * get water
+    * start marinade
     - Remake Dumplings
     - Wax
 
