@@ -2,7 +2,7 @@
     height: 80vh;
 }
 
-.cur > * {
+.cur > div > * {
     font-family: 'robo';
 }
 
