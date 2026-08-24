@@ -28,11 +28,12 @@ export const Client = ({title,info,featured,handleSwitch}) => {
     return (
         <div className={style.client} style={{color: color}}>
             <span ref={topRef} className={style.top}></span>
-            {!flip ?
-                <Cover handleFlip={handleFlip} featured={featured} title={title} info={info}/>
-                : 
+            {flip || !info.demo ?
                 <Read handleFlip={handleFlip} info={info} title={title}/>
+                : 
+                <Cover handleFlip={handleFlip} featured={featured} title={title} info={info}/>
             }
+
             <Basic title={title} tags={tags} color={color} launch={launch}/>
             <span ref={bottomRef} className={style.bottom}></span>
         </div>

@@ -1,4 +1,14 @@
 export const client_info = {
+    "Counter Scam": {
+        tags: [
+            'python', 
+            'quantum apps',
+            'APIs'
+        ],
+        description: 'A family friend is in need of assistance getting his money out of a crypto coinbase. Im not here to judge. Just hold my nose as I dive into the world of online trading. Phase 1: Research',
+        color: 'green',
+        launch: 'Aug 23 2026',
+    },
     "Alum Rock Press": {
         tags: [
             'indie artist', 
