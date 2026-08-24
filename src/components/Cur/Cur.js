@@ -6,14 +6,15 @@ export const Cur = () => {
     const [curRef, curHeight] = useComponentHeight()
     let cur = ` 
     
-    Fri Aug 21
-    
-    - Tidy House
-    - Marinade Carnitas
-    - Remake Dumplings
-    * shop
-    * get water
-    * start marinade
+Mon Aug 23
+
+- Research exchange
+- Break in Plan
+- Work Out
+- Haunted Hayride Cover 
+- Work bev hills kitchen job for Shara
+- Make Tortillas
+- Hit Skate Park
 
     `.split(`\n`)
 
