@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 import style from './header.module.css'
 export const PageInfo = ({ height}) => {
     const {pathname} = useLocation()
-    let title = pathname === '/' ? 'Recent' : pathname.split('/')[1]
+    let title = pathname === '/' ? 'AntiSocial Media' : pathname.split('/')[1]
     if(title.includes(`.`)){
         title = title.split(`.`)[1]
     }
