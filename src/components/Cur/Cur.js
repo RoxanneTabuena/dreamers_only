@@ -6,15 +6,14 @@ export const Cur = () => {
     const [curRef, curHeight] = useComponentHeight()
     let cur = ` 
     
-Mon Aug 23
-
-- Research exchange
-- Break in Plan
-- Work Out
-- Haunted Hayride Cover 
-- Work bev hills kitchen job for Shara
+Tue Aug 24
+Los Angeles
+- Take Jane to Work
+- Audit Audio Site
+- Org in Bev Hills for Shara
+- TROVE drop off
+- Skatepark
 - Make Tortillas
-- Hit Skate Park
 
     `.split(`\n`)
 
