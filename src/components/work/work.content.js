@@ -1,4 +1,16 @@
 export const client_info = {
+    "Audio Home": {
+        tags: [
+            'rhema', 
+            'blender',
+            'react'
+        ],
+        demo: 'https://imagehostclub.s3.us-west-1.amazonaws.com/dreamers/HomeMobileWire.png',
+        demoAlt: 'wireframe for new homepage',
+        description: 'Adding cute graphics to the Rhema home page',
+        color: 'blueviolet',
+        launch: 'Aug 30 2026',
+    },
     "Counter Scam": {
         tags: [
             'python', 

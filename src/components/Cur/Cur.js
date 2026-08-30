@@ -6,13 +6,9 @@ export const Cur = () => {
     const [curRef, curHeight] = useComponentHeight()
     let cur = ` 
     
-Fri Aug 28
-Los Angeles
-- Email Alex
-- Model Wire Assets
-- Animate for website
-- Install and Deploy 
-- Make Sisig
+Sun Aug 30
+Huntington Beach
+- Update Rhema Homepage to new wire
 
     `.split(`\n`)
 
