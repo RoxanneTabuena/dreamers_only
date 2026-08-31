@@ -28,6 +28,7 @@ export const Entry = ({title,info,featured,handleSwitch}) => {
     return (
         <div className={style.entry} style={{color: color}}>
             <span ref={topRef} className={style.top}></span>
+            <Basic title={title} tags={tags} color={color} launch={launch}/>
             <div className={style.display}>
 
                 {flip || !info.demo ?
@@ -37,7 +38,6 @@ export const Entry = ({title,info,featured,handleSwitch}) => {
                 }
             </div>
 
-            <Basic title={title} tags={tags} color={color} launch={launch}/>
             <span ref={bottomRef} className={style.bottom}></span>
         </div>
     )

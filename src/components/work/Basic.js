@@ -1,7 +1,7 @@
 import { NavButton } from '../../blocks/NavButton'
 import style from './work.module.css'
 export const Basic = ({title, launch, tags, color}) => {
-    return (<div>
+    return (<div className={style.basic}>
             <div className={style.title}>
                 <h3>{title}</h3>
                 <h3>{launch}</h3>

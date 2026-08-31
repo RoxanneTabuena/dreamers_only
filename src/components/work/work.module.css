@@ -140,6 +140,12 @@
         position: absolute;
         top:0;
     }
+
+    .basic {
+        max-width: 80%;
+        padding-top: 2em;
+        margin: 0 auto;
+    }
 }
 /* responsive desktop */
 @media only screen and (min-width: 481px) {
