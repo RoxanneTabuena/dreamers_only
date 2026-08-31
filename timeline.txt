@@ -16,4 +16,7 @@ Refractor
 7:02 Move basic info to top 7:13
 7:13 Add Entry Background 7:30
 
+
+
 slide show with blocks
+add description to basic

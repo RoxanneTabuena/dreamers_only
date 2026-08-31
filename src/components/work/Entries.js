@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { entry_info } from './work.content'
+import { entry_info } from './new.work.content'
 import { Entry } from './Entry'
 import style from './work.module.css'
 
