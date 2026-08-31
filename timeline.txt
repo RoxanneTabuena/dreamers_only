@@ -11,3 +11,5 @@ Sun Aug 30
 Mon Aug 31
 Update client design
 5:59 Get rid OF "background" 6:02
+Refractor 
+652 Client> Entry 7:02

@@ -1,4 +1,4 @@
-export const client_info = {
+export const entry_info = {
     "Audio Home": {
         tags: [
             'rhema', 

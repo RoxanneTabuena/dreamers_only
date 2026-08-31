@@ -1,17 +1,17 @@
 import { useState } from 'react'
 import { Filter } from './Filter'
-import { Clients } from './Clients'
-import { client_info } from './work.content'
+import { Entries } from './Entries'
+import { entry_info } from './work.content'
 import style from './work.module.css'
 
 export const Work = () => {
 // track filter height
 const [filterHeight, setFilterHeight] = useState(0)
 // generate filter list
-const clientNames = Object.keys(client_info)
+const dates = Object.keys(entry_info)
 let tagsList = new Set()
-clientNames.forEach((name)=>{
-    client_info[name].tags.forEach(tag=>{
+dates.forEach((name)=>{
+    entry_info[name].tags.forEach(tag=>{
             tagsList.add(tag)
     })
     // LOGIC FOR ADDING FEATURE FILTERS
@@ -52,7 +52,7 @@ const handleFilterChange = (height) => {
                 active={active}
                 filters={filters}
             />
-            <Clients 
+            <Entries 
                 filterHeight={filterHeight}
                 active={active}
             />

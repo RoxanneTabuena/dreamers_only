@@ -4,7 +4,7 @@ import { Read } from './Read'
 import { Cover } from './Cover'
 import { Basic } from './Basic'
 import style from './work.module.css'
-export const Client = ({title,info,featured,handleSwitch}) => {
+export const Entry = ({title,info,featured,handleSwitch}) => {
     // destructure details
     const {color, tags, launch} = info
     // control which project is being featured
@@ -26,7 +26,7 @@ export const Client = ({title,info,featured,handleSwitch}) => {
         setFlip(!flip)
     }
     return (
-        <div className={style.client} style={{color: color}}>
+        <div className={style.entry} style={{color: color}}>
             <span ref={topRef} className={style.top}></span>
             <div className={style.display}>
 
