@@ -46,6 +46,7 @@
 .display, .display *{
     max-height: 55vh;
     min-height: 55vh;
+    z-index: 20;
 }
 
 .demo {

@@ -1,5 +1,6 @@
 import { useIsVisible } from '../../hooks/useIsVisible'
 import { useEffect, useState } from 'react'
+import { Background } from './Background/Background'
 import { Read } from './Read'
 import { Cover } from './Cover'
 import { Basic } from './Basic'
@@ -28,6 +29,7 @@ export const Entry = ({title,info,featured,handleSwitch}) => {
     return (
         <div className={style.entry} style={{color: color}}>
             <span ref={topRef} className={style.top}></span>
+            <Background color={color}/>
             <Basic title={title} tags={tags} color={color} launch={launch}/>
             <div className={style.display}>
 
