@@ -25,16 +25,16 @@
     border-radius: 5px;
 }
 
-/* general clients */
-.clients{
+/* general entries */
+.entries{
     position: relative;
 }
 
-/* general client */
-.client{
+/* general entry */
+.entry{
     position: relative;
 }
-.client h3{
+.entry h3{
     font-family: 'Titles';
 }
 
@@ -113,21 +113,21 @@
 /* responsive mobile */
 @media only screen and (max-width: 480px) {
     /* mobile work */
-    .clients{
+    .entries{
         width: 85%;
         margin: auto;
     }
 
     /* mobile basic */
-    .client h3{
+    .entry h3{
         font-size: 21px;
     }
     .tags *{
         font-size: 15px;
         margin: 1px 3px;
     }
-    /* mobile client */
-    .client{
+    /* mobile entry */
+    .entry{
         margin: 15px auto;
         position: relative;
     }
@@ -142,7 +142,6 @@
     }
 
     .basic {
-        max-width: 80%;
         padding-top: 2em;
         margin: 0 auto;
     }
