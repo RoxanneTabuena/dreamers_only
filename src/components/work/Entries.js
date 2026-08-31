@@ -1,14 +1,9 @@
-import { useState, useEffect } from 'react'
 import { entry_info } from './new.work.content'
 import { Entry } from './Entry'
 import style from './work.module.css'
 
 export const Entries = ({filterHeight, active}) => {
-    const [feature, setFeature ] = useState(null)
-    useEffect(()=>{},[feature])
-    const handleSwitch = (entry) => {
-        setFeature(entry)
-    }
+
     let dates = Object.keys(entry_info)
     if(active){
         active.forEach((tag)=>{
@@ -19,12 +14,11 @@ export const Entries = ({filterHeight, active}) => {
     return ( 
         <div className={style.entries}
             style={{paddingTop: filterHeight}}>
-            {dates.map((entry)=>{
+            {dates.map((date)=>{
                 return <Entry 
-                            title={entry}
-                            key={entry}
-                            info={entry_info[entry]}
-                            featured = {feature===entry? true : false}
-                            handleSwitch={handleSwitch}
+                            date={date}
+                            entry={entry_info}
+                            key={date}
+                            info={entry_info[date]}
                         />})}
         </div>)}
