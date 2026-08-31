@@ -12,7 +12,7 @@ export const entry_info = {
                     'react'
                 ],
                 color: 'blueviolet',
-                description: 'Create New Graphics for Rhema Homepage'
+                description: 'Create new graphics for Rhema homepage'
             },
             covers: [
                 {img: 'https://imagehostclub.s3.us-west-1.amazonaws.com/dreamers/MobileHomeFinal.png',

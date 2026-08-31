@@ -26,7 +26,7 @@ export const Entry = ({date, entry }) => {
     },[bVisible, tVisible, date, feature, featureDispatch])
 
     return (
-        <div className={style.entry}>
+        <div className={style.entry} style={{color: basic.color}}>
             <span ref={topRef} className={style.top}></span>
                 <Basic date={date} basic={basic}/>
                 <Display entry={entry}/>

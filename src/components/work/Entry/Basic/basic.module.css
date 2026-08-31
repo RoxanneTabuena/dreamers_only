@@ -1,5 +1,17 @@
-.comp{
-    
+.basic{
+    width: 100%;
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'titles';
+}
+.basic > p {
+    font-family: 'robo';
+}
+
+.tags {
+    margin: .5em 0;
 }
 
 /* PHONE RULES */
