@@ -7,6 +7,8 @@ export const client_info = {
         ],
         demo: 'https://imagehostclub.s3.us-west-1.amazonaws.com/dreamers/HomeMobileWire.png',
         demoAlt: 'wireframe for new homepage',
+        featureDemo: 'https://imagehostclub.s3.us-west-1.amazonaws.com/dreamers/MobileHomeFinal.png',
+        featureDemoAlt: 'new homepage',
         description: 'Adding cute graphics to the Rhema home page',
         color: 'blueviolet',
         launch: 'Aug 30 2026',

@@ -41,6 +41,15 @@
 .read, .cover{
     width: 100%;
     position: relative;
+    margin: 0 auto;
+}
+.display, .display *{
+    max-height: 55vh;
+    min-height: 55vh;
+}
+
+.demo {
+    margin: 0 auto;
 }
 /* general basic info */
 .title{
@@ -57,28 +66,32 @@
 }
 /* general read mode background */
 .background{
-    position: absolute;
-    top: 0;
-    left: 0;
     filter: blur(3px) saturate(90%);
-    z-index: 10;
+    margin: 0 auto;
 }
 /* general content */
-.content *{
-    position: relative;
+.content{
+    position: absolute;
     z-index: 30;
+    top: 0;
+    left: 0;
+    height:100%;
 }
 
 .content{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     text-align: center;
     aspect-ratio: 1;
+    position: absolute;
+    max-width: 100%;
 }
 .content p {
     text-shadow: 1px 1px 1px black;
+    display: flex;
+    align-items: center;
 }
 
 .visit {
@@ -115,10 +128,10 @@
     }
     /* mobile client */
     .client{
-        height: 55vh;
         margin: 15px auto;
         position: relative;
     }
+
     .bottom{
         position: absolute;
         bottom: 0;

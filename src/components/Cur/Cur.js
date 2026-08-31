@@ -6,10 +6,16 @@ export const Cur = () => {
     const [curRef, curHeight] = useComponentHeight()
     let cur = ` 
     
-Sun Aug 30
-Huntington Beach
-- Update Rhema Homepage to new wire
-
+Mon Aug 31
+Los Angeles
+- Rhema
+    - Text animator
+    - Desktop
+    - Responsive Graphics
+- Dreamers
+    - Desktop
+    - Entry Redesign
+    
     `.split(`\n`)
 
     useEffect(()=>{
