@@ -1,5 +1,5 @@
 import { entry_info } from './new.work.content'
-import { Entry } from './Entry'
+import { Entry } from './Entry/Entry'
 import style from './work.module.css'
 
 export const Entries = ({filterHeight, active}) => {
@@ -17,8 +17,7 @@ export const Entries = ({filterHeight, active}) => {
             {dates.map((date)=>{
                 return <Entry 
                             date={date}
-                            entry={entry_info}
+                            entry={entry_info[date]}
                             key={date}
-                            info={entry_info[date]}
                         />})}
         </div>)}

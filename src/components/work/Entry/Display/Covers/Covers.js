@@ -1,7 +1,7 @@
-import style from './cover.module.css'
-export const Cover = () => {
+import style from './covers.module.css'
+export const Covers = () => {
     return (
-        <div className={style.cover}>
+        <div className={style.covers}>
 
         </div>
     )

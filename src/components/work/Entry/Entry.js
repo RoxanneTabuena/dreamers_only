@@ -1,4 +1,4 @@
-import { useIsVisible } from '../../hooks/useIsVisible'
+import { useIsVisible } from '../../../hooks/useIsVisible'
 import { useEffect } from 'react'
 import { Basic } from './Basic/Basic'
 import { Display } from './Display/Display'
@@ -28,7 +28,7 @@ export const Entry = ({date, entry }) => {
     return (
         <div className={style.entry}>
             <span ref={topRef} className={style.top}></span>
-                <Basic basic={basic}/>
+                <Basic date={date} basic={basic}/>
                 <Display entry={entry}/>
             <span ref={bottomRef} className={style.bottom}></span>
         </div>
