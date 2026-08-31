@@ -31,7 +31,7 @@ export const Client = ({title,info,featured,handleSwitch}) => {
             <div className={style.display}>
 
                 {flip || !info.demo ?
-                    <Read handleFlip={handleFlip} info={info} title={title}/>
+                    <Read handleFlip={handleFlip} info={info}/>
                     : 
                     <Cover handleFlip={handleFlip} featured={featured} title={title} info={info}/>
                 }

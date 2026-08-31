@@ -7,3 +7,7 @@ Fri Aug 21 26
 
 Sun Aug 30
 2:35 Adjust Content Read 2:48
+
+Mon Aug 31
+Update client design
+5:59 Get rid OF "background" 6:02
