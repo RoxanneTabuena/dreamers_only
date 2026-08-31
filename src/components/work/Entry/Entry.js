@@ -1,5 +1,5 @@
 import { useIsVisible } from '../../hooks/useIsVisible'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { Basic } from './Basic/Basic'
 import { Display } from './Display/Display'
 import { useContext } from 'react'
