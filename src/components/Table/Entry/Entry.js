@@ -18,18 +18,18 @@ export const Entry = ({date, entry }) => {
 
     // feature project on mobile only when both the top and bottom of project container are visible
     
-    useEffect(()=>{
-        if(bVisible && tVisible && feature !== date ){
-            const action = { type: "UPDATE", payload: date}
-            featureDispatch(action)
-        }
-    },[bVisible, tVisible, date, feature, featureDispatch])
+    // useEffect(()=>{
+    //     if(bVisible && tVisible && feature !== date ){
+    //         const action = { type: "UPDATE", payload: date}
+    //         featureDispatch(action)
+    //     }
+    // },[bVisible, tVisible])
 
     return (
         <div className={style.entry} style={{color: basic.color}}>
             <span ref={topRef} className={style.top}></span>
+                <Display entry={entry} date={date}/>
                 <Basic date={date} basic={basic}/>
-                <Display entry={entry}/>
             <span ref={bottomRef} className={style.bottom}></span>
         </div>
     )

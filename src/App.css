@@ -5,6 +5,8 @@
 *::after {
   box-sizing: border-box;
   color: inherit;
+  max-height: inherit;
+  max-width: inherit;
 }
 
 /* Prevent font size inflation */
@@ -64,6 +66,7 @@ img,
 picture {
   max-width: 100%;
   display: block;
+  max-height: inherit;
 }
 
 /* Inherit fonts for inputs and buttons */

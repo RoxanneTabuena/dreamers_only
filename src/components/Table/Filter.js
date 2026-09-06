@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useOutletContext } from 'react-router-dom'
 import { useComponentHeight } from '../../hooks/useComponentHeight'
 import { NavButton } from '../../blocks/NavButton'
-import style from './work.module.css'
+import style from './table.module.css'
 
 export const Filter= ({handleFilterChange, handleAddFilter, handleRemoveFilter, active, filters}) => {
     // get header height to determine filter position

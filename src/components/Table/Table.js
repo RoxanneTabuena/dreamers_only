@@ -2,9 +2,9 @@ import { useState } from 'react'
 import { Filter } from './Filter'
 import { Entries } from './Entries'
 import { entry_info } from './work.content'
-import style from './work.module.css'
+import style from './table.module.css'
 
-export const Work = () => {
+export const Table = () => {
 // track filter height
 const [filterHeight, setFilterHeight] = useState(0)
 // generate filter list
@@ -44,7 +44,7 @@ const handleFilterChange = (height) => {
     setFilterHeight(height)
 }
     return (
-        <div className={style.work}>
+        <div className={style.table}>
             <Filter 
                 handleFilterChange={handleFilterChange}
                 handleAddFilter={handleAddFilter}

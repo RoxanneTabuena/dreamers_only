@@ -1,5 +1,7 @@
-.comp{
-    
+.display{
+    max-height: 50vh;
+    min-height: 50vh;
+    background-color: aliceblue;
 }
 
 /* PHONE RULES */

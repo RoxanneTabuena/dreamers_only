@@ -1,6 +1,6 @@
 import { entry_info } from './new.work.content'
 import { Entry } from './Entry/Entry'
-import style from './work.module.css'
+import style from './table.module.css'
 
 export const Entries = ({filterHeight, active}) => {
 

@@ -1,5 +1,9 @@
-.comp{
-    
+.covers{
+    width: 100%;
+}
+
+.covers > img {
+    margin: 0 auto;
 }
 
 /* PHONE RULES */
