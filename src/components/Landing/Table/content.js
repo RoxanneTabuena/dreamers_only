@@ -324,19 +324,27 @@ const addTagLists = () => {
 }
 addTagLists()
 
-export const testLists = sourceLog['s000'].nature.tags
-
-const allTags = () => {
-    let tagSet = {}
-    // Run through SourceLog
-    // let tags = sourceTags(sourceID)
+let tagSet = {}
+const tallyTags = () => {
+    Object.keys(sourceLog).forEach((k)=>{
+        let newTags = sourceLog[k].nature.tags
+        let curTags = Object.keys(tagSet)
+        newTags.forEach((t)=>{
+            if(curTags.includes(t)){
+                tagSet[t]++
+            }else{
+                tagSet[t] = 1
+            }
+        })
+    })
     // update tagSet
         // examine list of tags individually
         // if setlist already contains tag
             //  add 1 to tags tally
             //  else add tag to setlist with a tally of 1
-    return tagSet
 }
+tallyTags()
+
 
 const activeTags = () => {
     let activeTags = []
