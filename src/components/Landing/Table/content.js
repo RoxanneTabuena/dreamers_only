@@ -20,6 +20,7 @@ const sourceLog = {
                 'mapbox'
             ]
         },
+
         composition: [
             {
                 type: 'cover',
@@ -236,74 +237,84 @@ const sourceLog = {
             },
         ]
     },
-    // sxxx : {
-    //     nature : {
-    //         time: 'xxx',
-    //         task: 'xxx',
-    //         goal: 'xxx',
-    //         color: 'xxx',
-    //         values: [],
-    //         skills: [],
-    //         parties: []
-    //     },
-    //     composition: [
-    //         {
-    //             type: 'cover',
-    //             img: 'xxx',
-    //             alt: 'xxx',
-    //             featureImg: 'xxx',
-    //             featureAlt: 'xxx',
-    //             txt: 'xxx',
-    //         },
-    //         {
-    //             type: 'img',
-    //             img: 'xxx',
-    //             alt: 'xxx',
-    //         },
-    //         {
-    //             type: 'text',
-    //             txt: 'xxx'
-    //         },
-    //         {
-    //             type: 'article',
-    //             img: 'xxx',
-    //             alt: 'xxx',
-    //             txt: 'xxx'
-    //         },
-    //         {
-    //             type: 'links',
-    //             links: [
-    //                 {
-    //                     icon: 'xxx',
-    //                     iconAlt: 'xxx',
-    //                     link: 'xxx'
-    //                 }
-    //             ]
-    //         },
-    //         {
-    //             type: 'slide',
-    //             img: 'xxx',
-    //             alt: 'xxx',
-    //             txt: 'xxx'
-    //         },
-    //         {
-    //             type: 'log',
-    //             logs: [
-    //                 ['xxx', 'xxx', 'xxx'],
-    //                 ['xxx', 'xxx', 'xxx'],
-    //             ]
-    //         }
-    //     ]
-    // },
+    sxxx : {
+        nature : {
+            time: 'xxx',
+            task: 'xxx',
+            goal: 'xxx',
+            color: 'xxx',
+            values: [],
+            skills: [],
+            parties: []
+        },
+        composition: [
+            {
+                type: 'cover',
+                img: 'xxx',
+                alt: 'xxx',
+                featureImg: 'xxx',
+                featureAlt: 'xxx',
+                txt: 'xxx',
+            },
+            {
+                type: 'img',
+                img: 'xxx',
+                alt: 'xxx',
+            },
+            {
+                type: 'text',
+                txt: 'xxx'
+            },
+            {
+                type: 'article',
+                img: 'xxx',
+                alt: 'xxx',
+                txt: 'xxx'
+            },
+            {
+                type: 'links',
+                links: [
+                    {
+                        icon: 'xxx',
+                        iconAlt: 'xxx',
+                        link: 'xxx'
+                    }
+                ]
+            },
+            {
+                type: 'slide',
+                img: 'xxx',
+                alt: 'xxx',
+                txt: 'xxx'
+            },
+            {
+                type: 'log',
+                logs: [
+                    ['xxx', 'xxx', 'xxx'],
+                    ['xxx', 'xxx', 'xxx'],
+                ]
+            }
+        ]
+    },
 }
 
-const sourceTags = (sourceID) => {
+const sourceTags = (id) => {
     let sourceTags = []
-    // run through info
-    // task, goal, values, skills, parties
-    // sanitize data and add to taglist
+    let nature = sourceLog[id].nature
+    Object.keys(nature).forEach((k)=>{
+        if( ['task', 'goal'].includes(k)){
+            sourceTags.push(nature[k].toLowerCase())
+        }
+        else if(['values','skills','parties'].includes(k)){
+            nature[k].forEach((kk)=>{
+                let tag = kk.toLowerCase()
+                if(!sourceTags.includes(kk)){
+                    sourceTags.push(tag)
+                }
+            })
+        }
+    })
     return sourceTags
-    
 }
 
 const allTags = () => {
