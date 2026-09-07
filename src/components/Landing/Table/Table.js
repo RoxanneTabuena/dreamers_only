@@ -1,7 +1,7 @@
-import style from './comp.module.css'
-export const Comp = () => {
+import style from './table.module.css'
+export const Table = () => {
     return (
-        <div className={style.comp}>
+        <div className={style.table}>
 
         </div>
     )

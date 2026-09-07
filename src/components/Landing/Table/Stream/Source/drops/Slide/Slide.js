@@ -1,7 +1,7 @@
-import style from './comp.module.css'
-export const Comp = () => {
+import style from './slide.module.css'
+export const Slide = () => {
     return (
-        <div className={style.comp}>
+        <div className={style.slide}>
 
         </div>
     )

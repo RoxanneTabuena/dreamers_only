@@ -1,7 +1,7 @@
-import style from './comp.module.css'
-export const Comp = () => {
+import style from './stream.module.css'
+export const Stream = () => {
     return (
-        <div className={style.comp}>
+        <div className={style.stream}>
 
         </div>
     )

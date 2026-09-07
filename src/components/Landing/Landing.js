@@ -1,7 +1,7 @@
-import style from './comp.module.css'
-export const Comp = () => {
+import style from './landing.module.css'
+export const Landing = () => {
     return (
-        <div className={style.comp}>
+        <div className={style.landing}>
 
         </div>
     )

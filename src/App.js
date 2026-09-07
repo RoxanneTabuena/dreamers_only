@@ -1,6 +1,6 @@
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import { Root }from "./components/root/Root"
-import { Table } from './components/Table/Table'
+import { Landing } from "./components/Landing/Landing"
 import { Cur } from './components/Cur/Cur';
 
 // feature
@@ -20,15 +20,11 @@ function App() {
       element={<Root/>}>
           <Route
             index
-            element={< Table/>}
+            element={< Landing/>}
             />
           <Route
             path="/cur"
             element={< Cur/>}
-            />
-          <Route
-            path="/:filter"
-            element={< Table/>}
             />
     </Route>
   ))
