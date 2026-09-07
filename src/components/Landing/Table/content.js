@@ -317,6 +317,15 @@ const sourceTags = (id) => {
     return sourceTags
 }
 
+const addTagLists = () => {
+    Object.keys(sourceLog).forEach((k)=>{
+        sourceLog[k].nature.tags = sourceTags(k)
+    })
+}
+addTagLists()
+
+export const testLists = sourceLog['s000'].nature.tags
+
 const allTags = () => {
     let tagSet = {}
     // Run through SourceLog
